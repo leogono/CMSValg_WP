@@ -1,0 +1,111 @@
+/*!
+Author: Leo Gono
+Twitter: @leogono
+*/
+.cmsvalg {
+	background: $gray url('#{$imgUrl}/main-bg.png');
+	font-size: 16px;
+	font-weight: 300;
+}
+#masthead {
+	background: url('#{$imgUrl}/menu-bg.png') repeat-x left bottom;
+	padding-bottom: 7px;
+	#branding {
+		background: $brand;
+		color: #fff;
+		text-align: center;
+		padding: 10px 0;
+		.site-name {
+			color: #fff;
+			text-decoration: none;
+			font-size: 30px;
+			font-weight: 700;
+		}
+		.site-desc {
+			font-size: 12px;
+			color: #dea3a3;
+			line-height: 10px;
+		}
+	}
+	#searchform, #knowledge-cat, #call-to-action {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#searchform {
+		margin-left: 0;
+		.input-group-addon {
+			background: none;
+			border: none;
+			padding: 0;
+			font-size: 26px;
+			color: #b3b3b3;
+			position: relative;
+			top: -3px;
+		}
+		.form-control {
+			border: none;
+			box-shadow: none;
+			font-size: 21px;
+			font-weight: 300;
+			padding: 3px 10px;
+			height: 36px;
+			max-width: 100%;
+			&:focus {
+				box-shadow: none;
+			}
+		}
+	}
+	#knowledge-cat {
+		.btn-default {
+			background: $lightGray;
+			font-size: 16px;
+			font-weight: 300;
+		}
+	}
+	#call-to-action {
+		.btn {
+			padding: 7px 12px;
+		}
+	}
+}
+#breadcrumbs {
+	background: $white;
+	margin-top: 30px;
+	padding: 10px 15px;
+	.cms-drop {
+		position: relative;
+		display: inline-block;
+	}
+	> ul {
+		padding: 0;
+		list-style: none;
+		margin-bottom: 0;
+		> li {
+			float: left;
+			margin-right: 10px;
+		}
+	}
+	p  {
+		margin: 0;
+	}
+	.bcrumbs {
+		margin-right: 10px;
+	}
+	a {
+		color: $textColor;
+		&:hover{
+			color: $brand;
+		}
+	}
+	.icon-chevron-right {
+		font-size: 13px;
+		margin-right: 5px;
+	}
+	.dropdown-menu {
+		a {
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+}

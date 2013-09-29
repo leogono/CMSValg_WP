@@ -1,0 +1,86 @@
+.spr {
+	background: url('#{$imgUrl}/sprite-cmsvalg.png') no-repeat;
+	&.novicel-logo {
+		background-position: 0 -238px;
+		width: 95px;
+		height: 57px;
+		display: block;
+		@include hide-text;
+	}
+	&.spr-linkedin {
+		background-position: -223px -238px;
+		width: 59px;
+		height: 61px;
+	}
+	&.spr-about-cmsvalg {
+		background-position: -135px -238px;
+		width: 44px;
+		height: 61px;
+	}
+	&.spr-advice {
+		background-position: -317px -238px;
+		width: 68px;
+		height: 61px;
+	}
+	&.spr-integ {
+		background-position: 0 0;
+	}
+	&.spr-ehandel {
+		background-position: -100px 0;
+	}
+	&.spr-internl {
+		background-position: -200px 0;
+	}
+	&.spr-ppc {
+		background-position: -300px 0;
+	}
+	&.spr-seo {
+		background-position: -400px 0;
+	}
+	&.spr-marktng {
+		background-position: -500px 0;
+	}
+	&.spr-backup {
+		background-position: -600px 0;
+	}
+	&.spr-roi {
+		background-position: -700px 0;
+	}
+}
+.knowledge-icon {
+	display: block;
+	text-align: center;
+	.spr {
+		width: 100px;
+		height: 100px;
+		display: block;
+		margin: 0 auto;
+	}
+	&:hover {
+		background: $brand;
+		& > .spr-integ {
+			background-position: 0 -100px;
+		}
+		& > .spr-ehandel {
+			background-position: -100px -100px;
+		}
+		& > .spr-internl {
+			background-position: -200px -100px;
+		}
+		& > .spr-ppc {
+			background-position: -300px -100px;
+		}
+		& > .spr-seo {
+			background-position: -400px -100px;
+		}
+		& > .spr-marktng {
+			background-position: -500px -100px;
+		}
+		& > .spr-backup {
+			background-position: -600px -100px;
+		}
+		& > .spr-roi {
+			background-position: -700px -100px;
+		}
+	}
+}

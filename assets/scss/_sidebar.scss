@@ -1,0 +1,65 @@
+#sidebar-widget {
+	background: $white;
+	margin-bottom: -9999em;
+	padding-bottom: 9999em;
+
+	//Widgets
+	.widget-header {
+		font-size: 18px;
+		font-weight: 300;
+		margin-top: 0;
+		padding: 10px 15px;
+	}
+	#cms-cat {
+		font-size: 16px;
+		font-weight: 300;
+		.list-group-item {
+			border-left: 0;
+			border-right: 0;
+			padding: 0;
+			a {
+				color: #666666;
+				display: block;
+				padding: 10px 15px;
+				img {
+					margin-right: 10px;
+					max-width: 28px;
+				}
+				&:hover {
+					text-decoration: none;
+				}
+			}
+			&:hover {
+				background: $gray;
+				border-right: 5px solid $brand;
+			}
+		}
+	}
+	.most-contributor {
+		padding: 0;
+		list-style: none;
+		li {
+			padding: 0 15px 10px;
+			span {
+				float: left;
+				font-size: 12px;
+				font-weight: 400;
+				color: $textColor;
+				line-height: 16px;
+				margin-top: 3px;
+				&.author-desc {
+					color: $linkColor;
+					margin-top: 0px;
+				}
+			}
+			&:hover  {
+				span {
+					color: $brand;
+				}
+			}
+			.avatar {
+				margin-right: 10px;
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+$imgUrl: '../img';
+$brand: #ba0000;
+$gray: #f4f4f4;
+$white: #fff;
+$textColor: #333;
+$linkColor: #666;
+$lightGray: #f0f0f0;
+$color9: #999;
+
+@mixin hide-text {
+	background-color: transparent;
+  color: transparent;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+}

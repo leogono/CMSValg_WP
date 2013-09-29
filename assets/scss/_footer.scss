@@ -1,0 +1,35 @@
+#site-info {
+	background: #252525;
+	color: #999;
+	padding: 40px 0;
+	.footer-info, .footer-icon {
+		background: $textColor;
+		font-size: 14px;
+		font-weight: 300;
+		padding: 10px 0;
+		margin-bottom: 10px;
+	}
+	.footer-info {
+		padding: 10px 60px 10px 30px;
+		.novicel-logo {
+			margin-top: -20px;
+			margin-bottom: 10px;
+		}
+	}
+	.footer-icon {
+		text-align: center;
+		min-height: 137px;
+		a {
+			display: block;
+			text-align: center;
+			color: #999;
+			&:hover {
+				color: lighten(#999, 30%);
+			}
+		}
+		.spr {
+			display: block;
+			margin: 15px auto;
+		}
+	}
+}

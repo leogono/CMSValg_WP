@@ -1,0 +1,97 @@
+#main {
+	margin-top: -7px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	.w-thumbnails {
+		position: relative;
+		margin: 10px 0;
+		.post-title {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			margin-bottom: 0;
+			a {
+				border-bottom: 1px solid #999;
+				color: $textColor;
+				display: block;
+				padding: 10px;
+				margin: 0 15px;
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 20px;
+				background: url('#{$imgUrl}/white-trans.png');
+				&:hover {
+					
+				}
+			}
+		}
+		//on Hover the whole element
+		&:hover > .post-title > a {
+			color: $white;
+			background: $brand;
+			text-decoration: none;
+		}
+		.comment-count-wrap {
+			position: absolute;
+			top: 0;
+			right: 15px;
+			background: #414141;
+			padding: 5px 10px;
+			a {
+				color: $white;
+				text-decoration: none;
+				font-size: 15px;
+				font-weight: 300;
+				.icon-comment {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	#feat-content {
+		margin-top: 20px;
+		.w-thumbnails {
+			.post-title a {
+				margin: 0;
+				font-size: 24px;
+				line-height: 1.3em;
+				padding: 15px;
+			}
+			.comment-count-wrap {
+				right: 0;
+			}
+		}
+	}
+
+	.section-title {
+		font-size: 24px;
+		font-weight: 300;
+		padding: 20px;
+		margin: 0;
+	}
+
+	//Knowledge Lists
+	#knowledge-lists  {
+		background: $white;
+		margin-top: 10px;
+		overflow: hidden;
+		.row {
+			margin-left: 0;
+			margin-right: -2px;
+			& > div {
+				padding: 0;
+				border: 1px solid #d6d6d6;
+				border-width: 1px 1px 0 0;
+			}
+		}
+		.knowledge-icon {
+			padding: 0 0 10px;
+			color: $textColor;
+			&:hover {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+	}
+}
