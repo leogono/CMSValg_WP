@@ -42,39 +42,7 @@
 
         <!-- Related Posts -->
         <div id="related-posts">
-          <h2 class="float-title">Relaterede Umbraco artikler</h2>
-
-          <div id="content-lists">
-            <div class="row">
-              <article class="related-post col-sm-4 w-thumbnails">
-                <a href="#" class="post-thumbnail">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post-thumb.jpg" alt="Post Title" class="img-responsive">
-                </a>
-                <h1 class="post-title"><a href="#">5 råd til valg af det bedste e-handels CMS</a></h1>
-                <div class="comment-count-wrap">
-                  <a href="#" class="comment-count"><i class="icon-comment"></i> 5</a>
-                </div>
-              </article>
-              <article class="related-post col-sm-4 w-thumbnails">
-                <a href="#" class="post-thumbnail">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post-thumb.jpg" alt="Post Title" class="img-responsive">
-                </a>
-                <h1 class="post-title"><a href="#">5 råd til valg af det bedste e-handels CMS</a></h1>
-                <div class="comment-count-wrap">
-                  <a href="#" class="comment-count"><i class="icon-comment"></i> 5</a>
-                </div>
-              </article>
-              <article class="related-post col-sm-4 w-thumbnails">
-                <a href="#" class="post-thumbnail">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/post-thumb.jpg" alt="Post Title" class="img-responsive">
-                </a>
-                <h1 class="post-title"><a href="#">5 råd til valg af det bedste e-handels CMS</a></h1>
-                <div class="comment-count-wrap">
-                  <a href="#" class="comment-count"><i class="icon-comment"></i> 5</a>
-                </div>
-              </article>
-            </div>
-          </div>
+          <?php comments_template('/templates/related-posts.php'); ?>
         </div>
         
       </article>
