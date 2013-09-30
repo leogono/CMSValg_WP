@@ -18,8 +18,21 @@
   <?php if(!is_front_page()) {
     ?>
     <div class="container">
-      <div id="breadcrumbs">
-        <ul class="clearfix">
+      <div id="breadcrumbs" class="clearfix">
+        <?php if ( function_exists('yoast_breadcrumb') ) {
+        yoast_breadcrumb();
+        } ?>
+        <?php if(is_tax('cms_system')) {
+          ?>
+          <div class="cms-drop">
+            <a href="#" class="bcrumbs url dropdown-toggle" data-toggle="dropdown"><i class="icon-caret-down"></i></a>
+            <?php get_template_part('templates/list-cmssimple'); ?>
+          </div>
+          
+          <?php
+        } ?>
+
+        <!-- <ul class="clearfix">
           <li><a href="#" class="bcrumbs url">Forside</a></li>
           <li class="cms-drop current">
             <i class="icon-caret-right"></i>
@@ -32,7 +45,7 @@
               <li><a href="#">Separated link</a></li>
             </ul>
           </li>
-        </ul>
+        </ul> -->
       </div>
     </div>
     <?php
