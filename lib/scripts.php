@@ -11,7 +11,7 @@
  * 3. /theme/assets/js/main.min.js (in footer)
  */
 function roots_scripts() {
-  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, 'b5ea63495dd7c3b5eb6f82dde7116103');
+  wp_enqueue_style('roots_main', get_template_directory_uri() . '/assets/css/main.min.css', false, '79c4d942535e5221dd6d2ecc10a256c9');
   wp_enqueue_style('cmsvalg-theme', get_template_directory_uri() . '/assets/css/cmsvalg.min.css', false, '20130927');
   wp_enqueue_style( 'fontAwesome', '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css', false, false, $media = 'all' );
 
