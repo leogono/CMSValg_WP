@@ -31,13 +31,7 @@
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
             Alt vores CMS viden <span class="caret"></span>
           </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
+          <?php get_template_part('templates/list-knowledge'); ?>
         </div>
         <div id="call-to-action" class="pull-right">
           <a href="<?php the_field('contact_us_url', 'option'); ?>" class="btn btn-primary">Rådgivning</a>
