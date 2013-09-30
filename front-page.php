@@ -47,27 +47,6 @@
             <?php
           }
           ?>
-          <!-- <li class="clearfix">
-            <a href="#">
-              <img src="assets/img/sample-avatar.jpg" alt="Emil Rasmussen" class="author avatar pull-left">
-              <span class="author-name">Emil Rasmussen</span> <br>
-              <span class="author-desc">CMS Ekspert</span>
-            </a>
-          </li>
-          <li class="clearfix">
-            <a href="#">
-              <img src="assets/img/sample-avatar.jpg" alt="Emil Rasmussen" class="author avatar pull-left">
-              <span class="author-name">Emil Rasmussen</span> <br>
-              <span class="author-desc">CMS Ekspert</span>
-            </a>
-          </li>
-          <li class="clearfix">
-            <a href="#">
-              <img src="assets/img/sample-avatar.jpg" alt="Emil Rasmussen" class="author avatar pull-left">
-              <span class="author-name">Emil Rasmussen</span> <br>
-              <span class="author-desc">CMS Ekspert</span>
-            </a>
-          </li> -->
         </ul>
       </div>
     </div>
