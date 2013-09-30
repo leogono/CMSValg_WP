@@ -25,5 +25,13 @@
       </ul>
     </nav>
   <?php endif; ?>
-</div>
 
+  <?php get_template_part('templates/cms', 'reference'); ?>
+
+  <div id="cta-bottom">
+
+      <a href="#" class="btn btn-primary btn-lg">Jeg vil gerne kontaktes vedr. en Umbraco løsning</a>
+
+  </div>
+  
+</div>
