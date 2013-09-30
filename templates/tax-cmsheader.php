@@ -42,20 +42,8 @@ $cms_video_thumb = get_field('cms_video_thumbnail', $taxonomy . '_' . $term_id);
 <!-- CMS Related -->
 <div id="cms-rel-top" class="float-title">
   <div class="row">
-    <div class="col-sm-9">
+    <div class="col-sm-12">
       <h3>Seneste Umbraco-relaterede artikler</h3>
-    </div>
-    <div class="col-sm-3">
-      <div class="cms-sorter">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sorter efter CMS <span class="caret"></span></a>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Action</a></li>
-          <li><a href="#">Another action</a></li>
-          <li><a href="#">Something else here</a></li>
-          <li class="divider"></li>
-          <li><a href="#">Separated link</a></li>
-        </ul>
-      </div>
     </div>
   </div>
 </div>

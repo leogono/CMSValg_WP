@@ -46,7 +46,7 @@ $know_video_thumb = get_field('knowledge_video_thumbnail', $taxonomy . '_' . $te
       <h3>Seneste artikler og indlæg om integration</h3>
     </div>
     <div class="col-sm-5 col-md-3">
-      <a href="" class="btn btn-primary">Tal med en CMS rådgiver</a>
+      <a href="<?php the_field('contact_us_url', 'option'); ?>" class="btn btn-primary">Tal med en CMS rådgiver</a>
     </div>
   </div>
 </div>
