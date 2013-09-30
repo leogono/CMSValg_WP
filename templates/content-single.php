@@ -16,14 +16,23 @@
             <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
           </footer>
 
-          <div class="referencer">
-            <h2 class="box-title">Referencer</h2>
-            <ul class="lists referemce-list">
-              <li><a href="#">Lorem ipsum dolor sit amet</a> - Proin gravida nibh vel velit auctor aliquet.</li>
-              <li><a href="#">Lorem ipsum dolor sit amet</a> - Proin gravida nibh vel velit auctor aliquet.</li>
-              <li><a href="#">Lorem ipsum dolor sit amet</a> - Proin gravida nibh vel velit auctor aliquet.</li>
-            </ul>
-          </div>
+          
+          <?php if(get_field('referencer')): ?>
+            <div class="referencer">
+
+              <h2 class="box-title">Referencer</h2>
+              <ul class="lists referemce-list">
+             
+              <?php while(has_sub_field('referencer')): ?>
+
+              <li><a href="<?php the_sub_field('referencer_url'); ?>"><?php the_sub_field('referencer_title'); ?></a> - <?php the_sub_field('referencer_description'); ?></li>
+             
+              <?php endwhile; ?>
+             
+              </ul>
+             </div>
+          <?php endif; ?>
+          
 
           <div id="comments-tag">
             <h2 class="box-title">Kommentarer</h2>
