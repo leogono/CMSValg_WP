@@ -98,7 +98,7 @@
               </a>
               <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
               <div class="comment-count-wrap">
-                <a href="#" class="comment-count"><i class="icon-comment"></i> 5</a>
+                <a href="<?php the_permalink(); ?>#comments-tag" class="comment-count"><i class="icon-comment"></i> </i> <?php comments_number( '0', '1', '%' ); ?></a>
               </div>
             </article>
 
@@ -140,7 +140,7 @@
                 </a>
                 <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                 <div class="comment-count-wrap">
-                  <a href="#" class="comment-count"><i class="icon-comment"></i> 5</a>
+                  <a href="<?php the_permalink(); ?>#comments-tag" class="comment-count"><i class="icon-comment"></i> </i> <?php comments_number( '0', '1', '%' ); ?></a>
                 </div>
               </article>
 
