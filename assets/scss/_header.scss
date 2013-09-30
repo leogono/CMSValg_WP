@@ -75,6 +75,10 @@ Twitter: @leogono
 	.cms-drop {
 		position: relative;
 		display: inline-block;
+	  vertical-align: baseline;
+	  zoom: 1;
+	  *display: inline;
+	  *vertical-align: auto;
 	}
 	> ul {
 		padding: 0;
@@ -97,9 +101,9 @@ Twitter: @leogono
 			color: $brand;
 		}
 	}
-	.icon-chevron-right {
+	.icon-caret-right {
 		font-size: 13px;
-		margin-right: 5px;
+		margin: 0 5px;
 	}
 	.dropdown-menu {
 		a {
