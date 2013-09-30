@@ -24,10 +24,7 @@
         </div>
       </div>
       <div class="col-md-5 col-sm-7">
-        <div id="searchform" class="input-group">
-          <span class="input-group-addon"><i class="icon-search"></i> </span>
-          <input type="text" class="form-control input-lg" placeholder="Er der noget bestemt du søger?">
-        </div>
+        <?php get_template_part('templates/searchform-home'); ?>
       </div>
       <div class="col-md-4 col-sm-5">
         <div id="knowledge-cat" class="btn-group pull-left">
@@ -43,7 +40,7 @@
           </ul>
         </div>
         <div id="call-to-action" class="pull-right">
-          <a href="#" class="btn btn-primary">Rådgivning</a>
+          <a href="<?php the_field('contact_us_url', 'option'); ?>" class="btn btn-primary">Rådgivning</a>
         </div>
       </div>
     </div>

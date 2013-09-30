@@ -8,8 +8,10 @@
     // Use Bootstrap's navbar if enabled in config.php
     if (current_theme_supports('bootstrap-top-navbar')) {
       get_template_part('templates/header-top-navbar');
-    } else {
+    } elseif (is_front_page()) {
       get_template_part('templates/header');
+    } else {
+      get_template_part('templates/header-inner');
     }
   ?>
   
