@@ -40,6 +40,7 @@
 		        <?php $found_none = '';
 		      endwhile;
 		    }
+		    break;
 		  }
 		}
 		if ($found_none) {

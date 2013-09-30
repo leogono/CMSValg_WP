@@ -12,7 +12,7 @@
 	$cms_names = array();
 
 	foreach ( $terms as $term ) {
-		$cms_names[] = $term->name;
+		$cms_names[] = $term->name; break;
 	}
 						
 	$cms_name = join( ", ", $cms_names );
