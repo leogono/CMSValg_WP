@@ -63,11 +63,25 @@
 		color: $textColor;
 		text-decoration: underline;
 		text-align: center;
+		cursor: pointer;
+		@include no-select;
+		.loader {
+			background: url('#{$imgUrl}/ajax-loader.gif') no-repeat;
+			height: 32px;
+			width: 32px;
+			margin: 0 auto;
+			display: none;
+		}
 		&:hover {
 			color: $brand;
 		}
 		&.done {
 			display: none;
+		}
+		&.loading {
+			.loader {
+				display: block;
+			}
 		}
 	}
 
