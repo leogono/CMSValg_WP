@@ -1,13 +1,13 @@
 
 $(function() {		
     
-    if($("#ajax-load-more").length){
+    if($("#cms-rel-posts").length){
 		var page = 1,
 	        $loading = true,
 	        $finished = false,
 	        $window = $(window),
-	        $el = $('#ajax-load-more'),
-	        $content = $('#ajax-load-more .row'),	        
+	        $el = $('#cms-rel-posts'),
+	        $content = $('#cms-rel-posts .row'),	        
 	        $path =  $content.attr('data-path');
 	        
 	        if($path === undefined){

@@ -62,8 +62,12 @@
 		display: block;
 		color: $textColor;
 		text-decoration: underline;
+		text-align: center;
 		&:hover {
 			color: $brand;
+		}
+		&.done {
+			display: none;
 		}
 	}
 
