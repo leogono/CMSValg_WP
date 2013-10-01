@@ -19,8 +19,8 @@
     <div class="row">
       <div class="col-md-3 col-sm-12">
         <div id="branding">
-          <a href="/" class="site-name">CMSValg.dk</a>
-          <p class="site-desc">din guide til valg af CMS</p>
+          <a href="<?php echo home_url(); ?>/" class="site-name"><?php bloginfo('name'); ?></a>
+          <p class="site-desc"><?php bloginfo('description'); ?></p>
         </div>
       </div>
       <div class="col-md-5 col-sm-7">
