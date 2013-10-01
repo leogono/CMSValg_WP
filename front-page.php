@@ -14,7 +14,7 @@
         <?php
 
         // The Query
-        $the_query = new WP_Query( 'posts_per_page=1' );
+        $the_query = new WP_Query( 'posts_per_page=1&ignore_sticky_posts=1' );
 
         // The Loop
         if ( $the_query->have_posts() ) {
@@ -56,7 +56,7 @@
           <?php
 
           // The Query
-          $query2 = new WP_Query( 'posts_per_page=3&offset=1' );
+          $query2 = new WP_Query( 'posts_per_page=3&offset=1&ignore_sticky_posts=1' );
 
           // The Loop
           if ( $query2->have_posts() ) {
@@ -96,28 +96,28 @@
         <h2 class="section-title">Videnscenter</h2>
         <div class="row">
           <div class="col-sm-6 col-md-3">
-            <a href="#" class="knowledge-icon"><span class="spr spr-integ"></span> Integration</a>
+            <a href="<?php echo home_url(); ?>/knowledge/integration" class="knowledge-icon"><span class="spr spr-integ"></span> Integration</a>
           </div>
           <div class="col-sm-6 col-md-3">
-            <a href="#" class="knowledge-icon"><span class="spr spr-ehandel"></span> E-handel</a>
+            <a href="<?php echo home_url(); ?>/knowledge/e-handel" class="knowledge-icon"><span class="spr spr-ehandel"></span> E-handel</a>
           </div>
           <div class="col-sm-6 col-md-3">
-            <a href="#" class="knowledge-icon"><span class="spr spr-internl"></span> Internationalisering</a>
+            <a href="<?php echo home_url(); ?>/knowledge/international" class="knowledge-icon"><span class="spr spr-internl"></span> Internationalisering</a>
           </div>
           <div class="col-sm-6 col-md-3">
-            <a href="#" class="knowledge-icon"><span class="spr spr-ppc"></span> Valg af udbyder</a>
+            <a href="<?php echo home_url(); ?>/knowledge/ppc" class="knowledge-icon"><span class="spr spr-ppc"></span> Valg af udbyder</a>
           </div>
           <div class="col-sm-6 col-md-3">
-            <a href="#" class="knowledge-icon"><span class="spr spr-seo"></span> SEO</a>
+            <a href="<?php echo home_url(); ?>/knowledge/seo" class="knowledge-icon"><span class="spr spr-seo"></span> SEO</a>
           </div>
           <div class="col-sm-6 col-md-3">
-            <a href="#" class="knowledge-icon"><span class="spr spr-marktng"></span> Marketing</a>
+            <a href="<?php echo home_url(); ?>/knowledge/marketing" class="knowledge-icon"><span class="spr spr-marktng"></span> Marketing</a>
           </div>
           <div class="col-sm-6 col-md-3">
-            <a href="#" class="knowledge-icon"><span class="spr spr-backup"></span> Backup</a>
+            <a href="<?php echo home_url(); ?>/knowledge/backup" class="knowledge-icon"><span class="spr spr-backup"></span> Backup</a>
           </div>
           <div class="col-sm-6 col-md-3">
-            <a href="#" class="knowledge-icon"><span class="spr spr-roi"></span> Økonomi</a>
+            <a href="<?php echo home_url(); ?>/knowledge/okonomi" class="knowledge-icon"><span class="spr spr-roi"></span> Økonomi</a>
           </div>
         </div>
       </div>
