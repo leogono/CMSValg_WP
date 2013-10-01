@@ -14,3 +14,11 @@ $color9: #999;
   font: 0/0 a;
   text-shadow: none;
 }
+@mixin no-select {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
