@@ -21,7 +21,7 @@
   ?>
 
   <div id="cms-rel-posts">
-      <div class="row" data-path="<?php echo get_stylesheet_directory_uri(); ?>/wp-content/themes/cmsvalg-wp/" data-post-type="post" data-category="" data-taxonomy="cms_system" data-tag="<?php echo $term->slug; ?>" data-display-posts="4" data-button-text="Se alle artikler om Umbraco">
+      <div class="row" data-path="<?php echo get_stylesheet_directory_uri(); ?>/wp-content/themes/cmsvalg-wp/" data-post-type="post" data-category="" data-taxonomy="cms_system" data-tag="<?php echo $term->slug; ?>" data-display-posts="4" data-button-text="Se alle artikler om <?php echo $term->name; ?>">
       <!-- Load Ajax Posts Here -->
       </div>
   </div>
