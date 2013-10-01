@@ -10,9 +10,9 @@
 
   <div id="cms-rel-posts">
     <div class="row">
-      <?php while (have_posts()) : the_post(); ?>
+      <?php $i = 0; while (have_posts() && $i < 4) : the_post(); ?>
         <?php get_template_part('templates/content', 'taxonomy'); ?>
-      <?php endwhile; ?>
+      <?php $i++; endwhile; ?>
     </div>
   </div>
 
