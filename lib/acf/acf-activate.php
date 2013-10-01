@@ -150,7 +150,7 @@ if(function_exists("register_field_group"))
 				'label' => 'CMS Icon',
 				'name' => 'cms_icon',
 				'type' => 'image',
-				'instructions' => 'Please upload 30x30px png file.',
+				'instructions' => 'Please upload 40x40px .png file.',
 				'save_format' => 'url',
 				'preview_size' => 'full',
 				'library' => 'uploadedTo',
