@@ -20,5 +20,5 @@ function wpse60590_remove_metaboxes() {
 add_action( 'admin_menu' , 'wpse60590_remove_metaboxes' );
 
 //Activate advance Custom fields
-// define( 'ACF_LITE', true );
+define( 'ACF_LITE', true );
 include_once('acf/acf-activate.php');
