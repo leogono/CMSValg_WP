@@ -52,17 +52,6 @@
 	#feat-content {
 		margin-top: 20px;
 		.w-thumbnails {
-			overflow: hidden;
-			@include bpoint(xs) {
-				min-height: 300px;
-				.post-thumbnail {
-					.img-responsive {
-						width: auto;
-						height: 300px;
-						max-width: none;
-					}
-				}
-			}
 			.post-title a {
 				margin: 0;
 				font-size: 24px;
@@ -71,6 +60,17 @@
 			}
 			.comment-count-wrap {
 				right: 0;
+			}
+		}
+		@include bpoint(xs) {
+			overflow: hidden;
+			min-height: 300px;
+			.post-thumbnail {
+				.img-responsive {
+					width: auto;
+					height: 300px;
+					max-width: none;
+				}
 			}
 		}
 	}
