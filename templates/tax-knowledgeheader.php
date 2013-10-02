@@ -23,7 +23,8 @@ $know_video_thumb = get_field('knowledge_video_thumbnail', $taxonomy . '_' . $te
     </div>
     <div class="col-sm-6 col-md-5">
       <div class="cms-video">
-        <?php echo $know_video_code; ?>
+        <iframe src="http://fast.wistia.net/embed/iframe/<?php echo $know_video_code; ?>?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="714" height="402"></iframe>
+        
       </div>
     </div>
 
