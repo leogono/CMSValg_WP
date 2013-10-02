@@ -2,6 +2,10 @@
 	background: $white;
 	margin-bottom: -9999em;
 	padding-bottom: 9999em;
+	@include bpoint(xs) {
+		margin-bottom: 10px;
+		padding-bottom: 0;
+	}
 
 	//Widgets
 	.widget-header {
