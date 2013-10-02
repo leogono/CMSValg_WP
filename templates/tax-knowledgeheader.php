@@ -23,16 +23,7 @@ $know_video_thumb = get_field('knowledge_video_thumbnail', $taxonomy . '_' . $te
     </div>
     <div class="col-sm-6 col-md-5">
       <div class="cms-video">
-        <a data-toggle="modal" href="#videoModal"><img src="<?php echo $know_video_thumb; ?>" alt="" class="img-responsive cms-video-thumb"></a>
-      </div>
-      <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body">
-              <?php echo $know_video_code; ?>
-            </div>
-          </div>
-        </div>
+        <?php echo $know_video_code; ?>
       </div>
     </div>
 
