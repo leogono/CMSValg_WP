@@ -7,12 +7,47 @@
 		padding-bottom: 0;
 	}
 
+	#cms-sidelist {
+		position: relative;
+		@include bpoint(sm) {
+			.dropdown-menu {
+				display: block !important;
+				position: relative;
+				float: none;
+				box-shadow: none;
+				border: none;
+			}
+		}
+		@include bpoint(md) {
+			.dropdown-menu {
+				display: block !important;
+				position: relative;
+				float: none;
+				box-shadow: none;
+				border: none;
+			}
+		}
+		@include bpoint(lg) {
+			.dropdown-menu {
+				display: block !important;
+				position: relative;
+				float: none;
+				box-shadow: none;
+				border: none;
+			}
+		}
+	}
+
 	//Widgets
 	.widget-header {
 		font-size: 18px;
 		font-weight: 300;
 		margin-top: 0;
 		padding: 10px 15px;
+		&.dropdown-toggle {
+			cursor: pointer;
+			@include no-select;
+		}
 	}
 	#cms-cat {
 		font-size: 16px;
