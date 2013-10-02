@@ -74,7 +74,7 @@
 			}
 		}
 	}
-	#content-lists.front-page {
+	#content-lists.front-page, #related-posts {
 		.w-thumbnails {
 			@include bpoint(xs) {
 				overflow: hidden;
