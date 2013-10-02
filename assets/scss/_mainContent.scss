@@ -74,6 +74,21 @@
 			}
 		}
 	}
+	#content-lists.front-page {
+		.w-thumbnails {
+			@include bpoint(xs) {
+				overflow: hidden;
+				height: 300px;
+				.post-thumbnail {
+					.img-responsive {
+						width: 100%;
+						height: auto;
+						max-width: none;
+					}
+				}
+			}
+		}
+	}
 
 	.section-title {
 		font-size: 24px;

@@ -57,7 +57,7 @@
       </div>
 
       <!-- content lists -->
-      <div id="content-lists">
+      <div id="content-lists" class="front-page">
         <div class="row">
           <?php
 
