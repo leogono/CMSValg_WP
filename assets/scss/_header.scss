@@ -53,6 +53,9 @@ Twitter: @leogono
 			&:focus {
 				box-shadow: none;
 			}
+			@include bpoint(xs) {
+				font-size: 16px;
+			}
 		}
 	}
 	#knowledge-cat {
