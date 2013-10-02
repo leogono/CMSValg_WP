@@ -2,9 +2,15 @@
 	<div class="row">
 		<div class="col-md-3 col-sm-4">
       <div id="sidebar-widget">
-        <?php get_template_part('templates/list-cmssystem'); ?>
 
-        <?php get_template_part('templates/list-author'); ?>
+        <div id="cms-sidelist">
+          <?php get_template_part('templates/list-cmssystem'); ?>
+        </div>
+        
+        <div id="most-contributor" class="hidden-xs">
+          <?php get_template_part('templates/list-author'); ?>
+        </div>
+
       </div>
     </div>
 
