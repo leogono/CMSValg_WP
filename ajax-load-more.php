@@ -52,15 +52,15 @@ if(empty($taxonomy)){
     $args[$taxonomy] = $tag;
 }
 
-query_posts($args); 
+$query2 = new WP_Query( $args ); 
 ?>
 <?php 
 // our loop  
-if (have_posts()) :  
+if ($query2->have_posts()) :  
 	$i =0;
-	while (have_posts()):  
+	while ($query2->have_posts()):  
 	$i++;
-	the_post();?> 
+	$query2->the_post();?> 
 	<article <?php post_class('post col-xs-6 col-sm-6 col-md-3 w-thumbnails'); ?>>
 		<a href="<?php the_permalink(); ?>" class="post-thumbnail">
 	    <?php 

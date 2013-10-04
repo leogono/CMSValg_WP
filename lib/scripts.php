@@ -29,7 +29,7 @@ function roots_scripts() {
   }
 
   wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/vendor/modernizr-2.6.2.min.js', false, null, false);
-  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', false, '1e81b4b31d2ed95b80cf1e7cb0a5fbd0', true);
+  wp_register_script('roots_scripts', get_template_directory_uri() . '/assets/js/scripts.min.js', false, '427a8d293f70b05261334aed3e02ddfd', true);
   wp_register_script( 'wistia_api', '//fast.wistia.net/static/iframe-api-v1.js', false, null, true );
 
   wp_enqueue_script('modernizr');
