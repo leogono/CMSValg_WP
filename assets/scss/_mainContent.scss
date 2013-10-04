@@ -1,5 +1,5 @@
 #main {
-	margin-top: -7px;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	overflow: hidden;
 	.w-thumbnails {
@@ -50,8 +50,9 @@
 		}
 	}
 	#feat-content {
-		margin-top: 20px;
+		margin-top: 0;
 		.w-thumbnails {
+			margin-top: 0px;
 			.post-title a {
 				margin: 0;
 				font-size: 24px;
