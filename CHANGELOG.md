@@ -1,3 +1,13 @@
+### 1.0.1
+* Added Author information in the header area for author.php
+* Updated Metaboxes
+* Front page adjustments
+
+### 1.0.0
+* Initial fork from Roots.io to CMSValg WP
+* Major style update
+* Added SCSS on Grunt
+
 ### 6.5.0: August 23rd, 2013
 * Reference new site, [http://roots.io/](http://roots.io/)
 * Remove bundled docs, reference [http://roots.io/docs/](http://roots.io/docs/)
