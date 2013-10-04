@@ -179,7 +179,7 @@ if(function_exists("register_field_group"))
 				'label' => 'CMS Video',
 				'name' => 'cms_video',
 				'type' => 'text',
-				'instructions' => 'Add video ID code. Upload CMS Image. Only use either CMS Image or CMS Video',
+				'instructions' => 'Add video ID code. Only use either CMS Image or CMS Video',
 				'default_value' => '',
 				'placeholder' => '',
 				'prepend' => '',
@@ -274,12 +274,6 @@ if(function_exists("register_field_group"))
 		'id' => 'acf_knowledge-information',
 		'title' => 'Knowledge Information',
 		'fields' => array (
-			array (
-				'key' => 'field_524f08aa9d3a2',
-				'label' => 'Option',
-				'name' => '',
-				'type' => 'tab',
-			),
 			array (
 				'key' => 'field_524f072fd0c22',
 				'label' => 'Knowledge Description',
