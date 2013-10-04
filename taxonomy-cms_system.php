@@ -67,28 +67,13 @@
 
     <div id="cms-rel-posts">
       <div class="row" data-path="<?php echo get_stylesheet_directory_uri(); ?>" data-post-type="post" data-category="" data-taxonomy="cms_system" data-tag="<?php echo $term->slug; ?>" data-display-posts="-1" data-post-not-in="<?php echo $postsNotIn; ?>" data-button-text="Se alle artikler om <?php echo $term->name; ?>">
-      <!-- Load Ajax Posts Here -->
+        <!-- Load Ajax Posts Here -->
       </div>
-  </div>
+    </div>
 
     <p id="load-more" class="more"><span class="loader"></span><span class="text">Se alle artikler om <?php echo $term->name; ?></span></p>
   </div>
-
-  <div id="cms-rel-posts">
-    <div class="row" data-path="<?php echo get_stylesheet_directory_uri(); ?>" data-post-type="post" data-category="" data-taxonomy="cms_system" data-tag="<?php echo $term->slug; ?>" data-display-posts="-1" data-post-not-in="<?php echo $postsNotIn; ?>" data-button-text="Se alle artikler om <?php echo $term->name; ?>">
-    <!-- Load Ajax Posts Here -->
-    </div>
-  </div>
-
-
-  <?php /*if ($wp_query->max_num_pages > 1) : ?>
-    <nav class="post-nav">
-      <ul class="pager">
-        <li class="previous"><?php next_posts_link(__('&larr; Older posts', 'roots')); ?></li>
-        <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
-      </ul>
-    </nav>
-  <?php endif; */?>
+  
 
   <?php get_template_part('templates/cms', 'reference'); ?>
 
