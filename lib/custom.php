@@ -19,6 +19,20 @@ function wpse60590_remove_metaboxes() {
 }
 add_action( 'admin_menu' , 'wpse60590_remove_metaboxes' );
 
+function custom_style_admin()  {
+	?>
+	<style>
+		.edit-tags-php #col-container #col-right {
+			width: 45%;
+		}
+		.edit-tags-php #col-container #col-left {
+			width: 50%;
+		}
+	</style>
+	<?php
+}
+add_action( 'admin_head', 'custom_style_admin' );
+
 //Activate advance Custom fields
 define( 'ACF_LITE', true );
 include_once('acf/acf-activate.php');
