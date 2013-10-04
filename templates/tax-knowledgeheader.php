@@ -6,7 +6,8 @@ $term_id = $queried_object->term_id;
 
 $know_icon = get_field('knowledge_icon', $taxonomy . '_' . $term_id);
 $know_video_code = get_field('knowledge_video', $taxonomy . '_' . $term_id);
-$know_video_thumb = get_field('knowledge_video_thumbnail', $taxonomy . '_' . $term_id);
+$know_desc = get_field('knowledge_description', $taxonomy . '_' . $term_id);
+$know_img = get_field('knowledge_image', $taxonomy . '_' . $term_id);
 
 ?>
 <!-- CMS Intro box -->
@@ -18,13 +19,16 @@ $know_video_thumb = get_field('knowledge_video_thumbnail', $taxonomy . '_' . $te
         <h1><?php echo $term->name; ?></h1>
       </header>
       <div class="cms-desc">
-        <p><?php echo $term->description; ?></p>
+        <p><?php echo $know_desc; ?></p>
       </div>
     </div>
     <div class="col-sm-6 col-md-5">
       <div class="cms-video">
-        <iframe src="http://fast.wistia.net/embed/iframe/<?php echo $know_video_code; ?>?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="714" height="402"></iframe>
-        
+        <?php if ($know_video_code) { ?>
+           <iframe src="http://fast.wistia.net/embed/iframe/<?php echo $know_video_code; ?>?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="714" height="402"></iframe>
+        <?php } elseif ($know_img) { ?>
+          <img src="<?php echo $know_img; ?>" alt="" class="img-responsive tax-image">
+        <?php } ?>
       </div>
     </div>
 
