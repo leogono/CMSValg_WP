@@ -16,7 +16,7 @@
         the_post_thumbnail('posts-thumb', array('class' => 'img-responsive'));
       }
       else {
-        echo '<img src="http://placehold.it/300x320&text=No+featured+image" class="img-responsive">';
+        echo '<img src="http://placehold.it/300x320&amp;text=No+featured+image" class="img-responsive" alt="">';
       }
       ?>
   </a>

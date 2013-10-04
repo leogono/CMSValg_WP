@@ -34,7 +34,7 @@
                   the_post_thumbnail('featured-thumb', array('class' => 'img-responsive'));
                 }
                 else {
-                  echo '<img src="http://placehold.it/850x388&text=No+featured+image" class="img-responsive" alt="">';
+                  echo '<img src="http://placehold.it/850x388&amp;text=No+featured+image" class="img-responsive" alt="">';
                 }
                 ?>
               </a>
@@ -76,13 +76,13 @@
                     the_post_thumbnail('posts-thumb', array('class' => 'img-responsive'));
                   }
                   else {
-                    echo '<img src="http://placehold.it/300x320&text=No+featured+image" class="img-responsive">';
+                    echo '<img src="http://placehold.it/300x320&amp;text=No+featured+image" class="img-responsive" alt="">';
                   }
                   ?>
                 </a>
                 <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                 <div class="comment-count-wrap">
-                  <a href="<?php the_permalink(); ?>#comments-tag" class="comment-count"><i class="icon-comment"></i> </i> <?php comments_number( '0', '1', '%' ); ?></a>
+                  <a href="<?php the_permalink(); ?>#comments-tag" class="comment-count"><i class="icon-comment"></i> <?php comments_number( '0', '1', '%' ); ?></a>
                 </div>
               </article>
 
