@@ -66,10 +66,12 @@
 				}
 				&:hover {
 					text-decoration: none;
+					// color: #fff;
+					background: none;
 				}
 			}
 			&:hover {
-				background: $gray;
+				background: $gray !important;
 				border-right: 5px solid $brand;
 			}
 		}
