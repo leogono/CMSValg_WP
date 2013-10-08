@@ -11,9 +11,13 @@
 	}
 	.footer-info {
 		padding: 10px 60px 10px 30px;
+		min-height: 137px;
 		.novicel-logo {
 			margin-top: -20px;
 			margin-bottom: 10px;
+		}
+		@include bpoint(sm) {
+			min-height: 177px;
 		}
 	}
 	.footer-icon {
@@ -30,6 +34,12 @@
 		.spr {
 			display: block;
 			margin: 15px auto;
+		}
+		@include bpoint(sm) {
+			min-height: 177px;
+			.spr-advice {
+				margin-bottom: 25px;
+			}
 		}
 	}
 }
