@@ -48,7 +48,7 @@ $cms_img = get_field('cms_image', $taxonomy . '_' . $term_id);
 <div id="cms-rel-top" class="float-title">
   <div class="row">
     <div class="col-sm-12">
-      <h3>Seneste Umbraco-relaterede artikler</h3>
+      <h3>Seneste <?php echo $term->name; ?>-relaterede artikler</h3>
     </div>
   </div>
 </div>

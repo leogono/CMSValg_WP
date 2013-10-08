@@ -1,4 +1,5 @@
-<?php 
+<?php
+$term = get_term_by('slug', get_query_var('term'), get_query_var('taxonomy'));
 $queried_object = get_queried_object(); 
 $taxonomy = $queried_object->taxonomy;
 $term_id = $queried_object->term_id;
@@ -14,7 +15,7 @@ $cms_res = get_field('cms_resources', $taxonomy . '_' . $term_id);
 
       <?php if(get_field('cms_facts', $taxonomy . '_' . $term_id)): ?>
         <div id="ref-box">
-          <h1>Godt at vide om Umbraco</h1>
+          <h1>Godt at vide om <?php echo $term->name; ?></h1>
           <ul class="cms-facts">
          
           <?php while(has_sub_field('cms_facts', $taxonomy . '_' . $term_id)): ?>
@@ -31,7 +32,7 @@ $cms_res = get_field('cms_resources', $taxonomy . '_' . $term_id);
 
       <?php if(get_field('cms_resources', $taxonomy . '_' . $term_id)): ?>
         <div id="ref-box">
-          <h1>Godt at vide om Umbraco</h1>
+          <h1>Godt at vide om <?php echo $term->name; ?></h1>
           <ul class="cms-facts">
          
           <?php while(has_sub_field('cms_resources', $taxonomy . '_' . $term_id)): ?>

@@ -79,7 +79,7 @@
 
   <div id="cta-bottom">
 
-      <a href="<?php the_field('contact_us_url', 'option'); ?>" class="btn btn-primary btn-lg">Jeg vil gerne kontaktes vedr. en Umbraco løsning</a>
+      <a href="<?php the_field('contact_us_url', 'option'); ?>" class="btn btn-primary btn-lg">Jeg vil gerne kontaktes vedr. en <?php echo $term->name; ?> løsning</a>
 
   </div>
   
