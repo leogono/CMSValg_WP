@@ -42,7 +42,7 @@ if(function_exists("register_field_group"))
 				'name' => 'promotion_image',
 				'type' => 'image',
 				'instructions' => 'Please upload 850px by 400px image.',
-				'save_format' => 'url',
+				'save_format' => 'id',
 				'preview_size' => 'featured-thumb',
 				'library' => 'uploadedTo',
 			),

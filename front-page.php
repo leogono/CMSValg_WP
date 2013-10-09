@@ -29,12 +29,17 @@
             ?>
             <article class="post feature-post w-thumbnails">
               <a href="<?php the_permalink(); ?>" class="post-thumbnail">
-                <?php 
-                if ( has_post_thumbnail() ) {
-                  the_post_thumbnail('featured-thumb', array('class' => 'img-responsive'));
+                <?php
+                $attachment_id = get_field('promotion_image');
+                $size = "featured-thumb";
+                 
+                $image = wp_get_attachment_image_src( $attachment_id, $size );
+
+                if ( $image ) {
+                  echo '<img src="' . $image[0] . '" alt="" class="img-responsive">';
                 }
                 else {
-                  echo '<img src="http://placehold.it/850x400&amp;text=No+featured+image" class="img-responsive" alt="">';
+                  echo '<img src="http://placehold.it/850x400&amp;text=No+promotion+image" class="img-responsive" alt="">';
                 }
                 ?>
               </a>
