@@ -42,7 +42,7 @@
 
         <!-- Related Posts -->
         <div id="related-posts">
-          <?php comments_template('/templates/related-posts.php'); ?>
+          <?php get_template_part('templates/related-posts'); ?>
         </div>
         
       </article>
