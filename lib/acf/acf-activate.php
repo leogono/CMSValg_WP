@@ -37,6 +37,16 @@ if(function_exists("register_field_group"))
 		'title' => 'Artikel',
 		'fields' => array (
 			array (
+				'key' => 'field_525571211c37b',
+				'label' => 'Promotion Image',
+				'name' => 'promotion_image',
+				'type' => 'image',
+				'instructions' => 'Please upload 850px by 400px image.',
+				'save_format' => 'url',
+				'preview_size' => 'featured-thumb',
+				'library' => 'uploadedTo',
+			),
+			array (
 				'key' => 'field_52491a67bdf84',
 				'label' => 'Referencer',
 				'name' => 'referencer',
