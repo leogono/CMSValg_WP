@@ -36,7 +36,7 @@
                 $image = wp_get_attachment_image_src( $attachment_id, $size );
 
                 if ( $image ) {
-                  echo '<img src="' . $image[0] . '" alt="" class="img-responsive">';
+                  echo '<img src="' . $image[0] . '" alt="Promotion photo of ' . get_the_title() . '" class="img-responsive">';
                 }
                 else {
                   echo '<img src="http://placehold.it/850x400&amp;text=No+promotion+image" class="img-responsive" alt="">';
