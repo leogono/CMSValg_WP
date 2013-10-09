@@ -139,3 +139,10 @@
 		height: auto;
 	}
 }
+.comment-count-wrap {
+	.comment-count {
+		&::before {
+			margin-right: 0;
+		}
+	}
+}

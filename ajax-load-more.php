@@ -74,7 +74,7 @@ if ($query2->have_posts()) :
 	  </a>
 	  <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 	  <div class="comment-count-wrap">
-	    <a href="<?php the_permalink(); ?>#comments-tag" class="comment-count"><i class="icon-comment"></i> <?php comments_number( '0', '1', '%' ); ?></a>
+	    <a href="<?php the_permalink(); ?>#comments-tag" class="comment-count icon-comment"> <?php comments_number( '0', '1', '%' ); ?></a>
 	  </div>
 	</article>
 <?php endwhile; endif; wp_reset_query(); ?> 
