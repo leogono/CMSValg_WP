@@ -1,4 +1,20 @@
-<h2 class="float-title">Relaterede Umbraco artikler</h2>
+<?php
+	$terms = get_the_terms( $post->ID, 'cms_system' );
+	if ( $terms && ! is_wp_error( $terms ) ) : 
+
+	$cms_names = array();
+
+	foreach ( $terms as $term ) {
+		$cms_names[] = $term->name; break;
+	}
+						
+	$cms_name = join( ", ", $cms_names );
+
+	endif;
+?>
+
+<h2 class="float-title">Relaterede <?php echo $cms_name; ?> artikler</h2>
+
 <div class="content-lists">
 	<div class="row">
 		<?php
