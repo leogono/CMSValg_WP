@@ -6,6 +6,9 @@ Twitter: @leogono
 	background: $gray url('#{$imgUrl}/main-bg.png');
 	font-size: 16px;
 	font-weight: 300;
+	h1, h2, h3, h4, h5, h6 {
+		color: $textColor;
+	}
 }
 #masthead {
 	background: url('#{$imgUrl}/menu-bg.png') repeat-x left bottom;
