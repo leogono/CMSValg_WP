@@ -26,30 +26,9 @@
         if ( $the_query->have_posts() ) {
           while ( $the_query->have_posts() ) {
             $the_query->the_post();
-            ?>
-            <article class="post feature-post w-thumbnails">
-              <a href="<?php the_permalink(); ?>" class="post-thumbnail">
-                <?php
-                $attachment_id = get_field('promotion_image');
-                $size = "featured-thumb";
-                 
-                $image = wp_get_attachment_image_src( $attachment_id, $size );
+            
+            get_template_part('templates/content', 'feature');
 
-                if ( $image ) {
-                  echo '<img src="' . $image[0] . '" alt="Promotion photo of ' . get_the_title() . '" class="img-responsive">';
-                }
-                else {
-                  echo '<img src="http://placehold.it/850x400&amp;text=No+promotion+image" class="img-responsive" alt="">';
-                }
-                ?>
-              </a>
-              <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-              <div class="comment-count-wrap">
-                <a href="<?php the_permalink(); ?>#comments-tag" class="comment-count icon-comment"> <?php comments_number( '0', '1', '%' ); ?></a>
-              </div>
-            </article>
-
-            <?php
           }
         } else {
           // no posts found
@@ -73,25 +52,9 @@
           if ( $query2->have_posts() ) {
             while ( $query2->have_posts() ) {
               $query2->the_post();
-              ?>
-              <article class="post col-sm-4 w-thumbnails">
-                <a href="<?php the_permalink(); ?>" class="post-thumbnail">
-                  <?php 
-                  if ( has_post_thumbnail() ) {
-                    the_post_thumbnail('posts-thumb', array('class' => 'img-responsive'));
-                  }
-                  else {
-                    echo '<img src="http://placehold.it/300x320&amp;text=No+featured+image" class="img-responsive" alt="">';
-                  }
-                  ?>
-                </a>
-                <h1 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-                <div class="comment-count-wrap">
-                  <a href="<?php the_permalink(); ?>#comments-tag" class="comment-count icon-comment"><?php comments_number( '0', '1', '%' ); ?></a>
-                </div>
-              </article>
 
-              <?php
+              get_template_part('templates/content', 'front');
+
             }
           } else {
             // no posts found

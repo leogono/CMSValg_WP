@@ -25,7 +25,7 @@
              
               <?php while(has_sub_field('referencer')): ?>
 
-              <li><a href="<?php the_sub_field('referencer_url'); ?>"><?php the_sub_field('referencer_title'); ?></a> - <?php the_sub_field('referencer_description'); ?></li>
+              <li><a href="<?php the_sub_field('referencer_url'); ?>" target="_blank"><?php the_sub_field('referencer_title'); ?></a> - <?php the_sub_field('referencer_description'); ?></li>
              
               <?php endwhile; ?>
              
