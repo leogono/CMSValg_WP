@@ -46,7 +46,7 @@
 		border-width: 1px 0;
 		li {
 			float: left;
-			margin-right: 30px;
+			margin-right: 20px;
 			a {
 				color: $color9;
 				&:hover {
@@ -55,7 +55,6 @@
 			}
 			[class^="icon-"], [class*=" icon-"] {
 				color: $brand;
-				margin-right: 5px;
 			}
 		}
 	}
