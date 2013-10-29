@@ -65,7 +65,7 @@
           ?>
         </div>
         <div class="more-article">
-          <a href="#" class="btn btn-primary btn-lg">Vis alle indlæg</a>
+          <a href="<?php echo ( get_option( 'show_on_front' ) == 'page' ) ? get_permalink( get_option('page_for_posts' ) ): bloginfo('url');?>" class="btn btn-primary btn-lg">Vis alle indlæg</a>
         </div>
       </div>
 
