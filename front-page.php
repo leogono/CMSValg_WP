@@ -64,6 +64,9 @@
 
           ?>
         </div>
+        <div class="more-article">
+          <a href="#" class="btn btn-primary btn-lg">Vis alle indlæg</a>
+        </div>
       </div>
 
       <div id="knowledge-lists">
