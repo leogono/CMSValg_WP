@@ -5,27 +5,8 @@
   </div>
   <ul class="additional-meta clearfix">
     <li class="date"><i class="icon-calendar"></i> <?php echo get_the_date('j. F, Y'); ?></li>
-			<?php
-				$terms = get_the_terms( $post->ID, 'cms_system' );
-				if ( $terms && ! is_wp_error( $terms ) ) : 
-
-				$cms_names = array();
-
-				$countCMS = count($terms);
-
-				foreach ( $terms as $term ) {
-					$cms_names[] = $term->name;
-				}
-									
-				$cms_name = join( ", ", $cms_names );
-			?>
-			<?php if ( $countCMS === 1 ) {
-				?>
-				<li class="category"><i class="icon-tags"></i> <?php echo $cms_name; ?></li>
-				<?php
-			} ?>
-    
-<?php endif; ?>
+			
+		<?php get_template_part('templates/extra-meta'); ?>
 
     <li class="comments"><i class="icon-comments"></i> <a href="#comments-tag"><?php comments_number( '0', '1', '%' ); ?> kommentarer</a></li>
   </ul>
