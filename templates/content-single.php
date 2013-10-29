@@ -12,7 +12,11 @@
             <?php the_content(); ?>
           </div>
 
-          <footer>
+          <footer class="post-meta">
+            <ul class="additional-meta clearfix">
+              <li>Relateret til følgende CMS:</li>
+              <?php get_template_part('templates/extra-meta'); ?>
+            </ul>
             <?php wp_link_pages(array('before' => '<nav class="page-nav"><p>' . __('Pages:', 'roots'), 'after' => '</p></nav>')); ?>
           </footer>
 

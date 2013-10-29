@@ -5,8 +5,6 @@
   </div>
   <ul class="additional-meta clearfix">
     <li class="date"><i class="icon-calendar"></i> <?php echo get_the_date('j. F, Y'); ?></li>
-			
-		<?php get_template_part('templates/extra-meta'); ?>
 
     <li class="comments"><i class="icon-comments"></i> <a href="#comments-tag"><?php comments_number( '0', '1', '%' ); ?> kommentarer</a></li>
   </ul>
